@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscar Profesor o Estudiante</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscar Profesor o Estudiante</h1>
+        <form method="post" action="/Busqueda">
+            <div class="form-group">
+                <label for="tipo">Buscar por tipo:</label>
+                <select class="form-control" id="tipo" name="tipo">
+                    <option value="Profesor">Profesor</option>
+                    <option value="Estudiante">Estudiante</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cedula">Cédula:</label>
+                <input type="text" class="form-control" id="cedula" name="cedula">
+            </div>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+    </div>
+</body>
+</html>

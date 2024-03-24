@@ -1,0 +1,28 @@
+﻿@model dynamic
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado de la Búsqueda</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Resultado de la Búsqueda</h1>
+        <table class="table">
+            <tr>
+                <th>Cédula</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Área de Conocimiento</th>
+            </tr>
+            <tr>
+                <td>@Model.Cedula</td>
+                <td>@Model.Nombre</td>
+                <td>@Model.Apellido</td>
+                <td>@Model.AreaConocimiento</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
